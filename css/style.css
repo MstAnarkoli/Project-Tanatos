@@ -1,0 +1,622 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*
+	Author: Mst Anarkoli
+	Mail: anarkoliniru@gmail.com
+
+*/
+/*
+	===Index==
+	1. HOME
+	2. ABOUT US
+	3. SERVICES
+	4. OUR WORKS
+	5. OUR TEAM
+	6. CONTACT
+*/
+
+/* Global CSS */
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+h3{
+	font-size: 35px;
+	color:#3b434c;
+}
+
+p{
+	font-size: 16px;
+	color:#7e8286;
+}
+
+
+
+
+
+
+/* Theme CSS */
+
+/* Header CSS */
+
+header{
+	padding: 25px 0;
+
+	width: 100%;
+	float: left;
+	background: url(../img/banner.png) no-repeat;
+	background-size: cover;
+	background-position: center-top;
+	position: relative;
+}
+
+header::before{
+	content:'';
+	width: 100%;
+	height: 100%;
+	background-color:#444a51;
+	opacity: .9;
+	position: absolute;
+	top:0;
+}
+
+.nav-head{
+    padding: 25px 0;
+}
+
+.nav-brand{
+  	margin-top: 0px;
+}
+
+
+.fa.fa-bars{
+    color: white;
+    margin-left: 10px;
+}
+
+.nav-link{
+    color: white;
+}
+.navbar span {
+    color: white;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.hero-main{
+	padding-top: 150px;
+
+}
+
+.hero-main h2{
+	font-size: 70px;
+	color:#ffffff;
+	font-weight: 700;
+	padding-bottom: 10px;
+}
+.hero-main h4{
+	font-size: 23px;
+	color:#ffffff;
+	margin-bottom: 55px;
+	font-weight: 400;
+	line-height: 40px;
+}
+.hero-main span{
+	color: #f7600e;
+}
+
+.hero-btn{
+
+}
+.hero-btn1{
+	 	background: #f7600e;
+        color: white;
+        font-size: 15px;
+        padding: 12px 70px;
+        border: none;
+        outline: none;
+        border-radius: 8px;
+        cursor: pointer;
+        margin-left: 40px;
+       
+
+
+
+}
+.hero-btn2{
+		background: transparent;
+	    color: white;
+	    font-size: 15px;
+	    padding: 10px 50px;
+	    border: 1px solid #ffffff61;
+	    outline: none;
+	    border-radius: 8px;
+	    cursor: pointer;
+	    display: inline-block;
+	    margin-right: 40px;
+    
+
+
+}
+.fa.fa-angle-down{
+    color: white;
+    display: inline-block;
+    border: 1px solid white;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    margin-top: 180px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 30px;
+}
+.service-one{
+	padding-top: 100px;
+
+}
+.service-one h4{
+	padding-top: 30px;
+	padding-bottom: 10px;
+	font-weight: 700;
+	color: #3b434c;
+	font-size: 16px;
+
+}
+.service-one p{
+	padding:0 20px;
+	line-height: 30px;
+	font-size: 14px;
+
+
+}
+
+
+.Newsletter{
+
+	width: 100%;
+	float: left;
+	background: url(../img/newsletter.png) no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+
+.Newsletter::before{
+	content:'';
+	width: 100%;
+	height: 100%;
+	background-color:#444a51;
+	opacity: .9;
+	position: absolute;
+	top:0;
+}
+
+
+
+.sub-btn{
+	    background: #f7600e;
+        color: white;
+        font-size: 15px;
+        padding: 8px 35px;
+        border: none;
+        outline: none;
+        border-radius: 8px;
+        cursor: pointer;
+        margin-right: 200px;
+        text-align: left;
+   
+}
+.form-control{
+	border-radius: 8px;
+}
+.our-works{
+	padding: 80px 0;
+}
+
+
+.our-works1{
+	padding-bottom: 25px;
+}
+.our-workshead {
+	padding-top: 80px;
+}
+
+.our-workshead h3{
+	font-weight: 700;
+}
+.our-workshead p{
+    color: #e2e3e4;
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+.our-workshead span{
+	color: #f7600e;
+}
+
+.cstm-btn{
+	background:transparent;
+    color: #612316;
+    padding: 13px 60px;
+    margin: 5% auto;
+    font-size: 18px;
+    font-weight: 400;
+    border:1px solid #d8d9db ;
+    margin-top: 80px;
+    border-radius: 8px;
+
+
+}
+
+.image-hover{
+	width: 100%;
+	height: 100%;
+	float: left;
+	position: relative;
+	overflow: hidden;
+	
+
+}
+
+.image-hover img{
+	
+    width:100%;
+    float: left;
+}
+.image-hover-content{
+	text-align: center;
+	padding: 90px 0;
+	background: #f7600e;
+	opacity: 0;
+	position: absolute;
+	width: 100%;
+	float: left;
+	height: 100%;
+	color: #fff;
+	top:0;
+	transition: 0.8s ease-in-out;
+	border-radius: 3%;
+
+}
+
+.image-hover-content h3{
+	margin:20px 0;
+	font-size: 25px;
+	text-align: center;
+	color: #ffffff;
+}
+
+.image-hover-content p{
+	width: 80%;
+	margin-left: 10%;
+	line-height: 25px;
+	font-size: 14px;
+	color: #ffffff;
+}
+
+.project-btn{
+		background: #ffffff;
+        color:#f7600e;
+        font-size: 18px;
+        padding: 12px 65px;
+        border: none;
+        outline: none;
+        border-radius: 8px;
+        cursor: pointer;
+       
+
+}
+.image-hover:hover .image-hover-content{
+
+	opacity: 0.9;
+} 
+.gallery-one{
+	margin-bottom: 25px;
+}
+
+.client-review{
+
+	width: 100%;
+	float: left;
+	background: url(../img/client_background.png) no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+
+.client-review::before{
+	content:'';
+	width: 100%;
+	height: 100%;
+	background-color:#444a51;
+	opacity: .9;
+	position: absolute;
+	top:0;
+}
+
+.client-review1 h5{
+	color: #ffffff;
+	font-size: 25px;
+	padding: 40px 0;
+
+}
+.client-review1 p{
+	color: #ffffff;
+	font-size: 18px;
+	padding: 0;
+}
+
+.our-team{
+	padding: 25px 0;
+}
+.our-teamhead{
+	padding: 25px 0;
+}
+
+.our-teamhead span{
+	color: #f7600e;
+}
+
+.our-teamhead h3{
+	font-weight: 700;
+	padding-top: 80px;
+}
+.our-teamhead p{
+
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+
+.team-member1 h3{
+	font-size: 25px;
+	margin: 15px 0;
+
+}
+.team-member1 p{
+	font-size: 14px;
+	line-height: 25px;
+}
+
+
+.hello{
+	padding-top: 80px;
+	width: 100%;
+	float: left;
+	background: url(../img/hello.png) no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	padding-bottom: 100px;
+}
+
+.hello::before{
+	content:'';
+	width: 100%;
+	height: 100%;
+	background-color:#444a51;
+	opacity: .9;
+	position: absolute;
+	top:0;
+}
+
+
+.hello-head span{
+	color: #f7600e;
+}
+.hello-head h3{
+ 	color: #ffffff;
+ 	font-weight: 700;
+ 	padding-top: 20px;
+
+}
+.hello-head p{
+	color: #ffffff;
+	margin-top: 20px;
+    margin-bottom: 80px;
+    line-height: 30px;
+}
+.hello-contact{
+	padding-bottom: 12px;
+	text-align: center;
+
+}
+.form-control{
+margin-bottom: 12px;
+}
+
+.hire-btn{
+		background: #f7600e;
+        color: white;
+        font-size: 15px;
+        padding: 10px 70px;
+        border: none;
+        outline: none;
+        border-radius: 8px;
+        cursor: pointer;
+        
+
+}
+
+.hire-icon ul{
+	list-style: none;
+	text-align: right;
+
+}
+.hire-icon ul li{
+	display: inline-block;
+	font-size: 22px;
+	margin: 0px 5px;
+
+}
+.fa.fa-facebook{
+	background: #205b9f;
+	width:30px;
+	height:30px;
+	color: white;
+	line-height: 30px;
+	border-radius: 50%;
+	text-align: center;
+}
+
+.fa.fa-twitter{
+    background: #00ace3;
+    width:30px;
+	height:30px;
+	color: white;
+	line-height: 30px;
+	border-radius: 50%;
+	text-align: center;
+}
+
+.fa.fa-google-plus{
+    background: #ff3921;
+    width:30px;
+	height:30px;
+	color: white;
+	line-height: 30px;
+	border-radius: 50%;
+	text-align: center;
+}
+
+
+
+.fa.fa-dribbble{
+	background:#ff72a5; 
+	width:30px;
+	height:30px;
+	color: white;
+	line-height: 30px;
+	border-radius: 50%;
+	text-align: center;
+}
+
+.fa.fa-behance{
+    background: #009bd5; 
+   width:30px;
+	height:30px;
+	color: white;
+	line-height: 30px;
+	border-radius: 50%;
+	text-align: center;
+}
+
+
+footer{
+	background-color: #3b434c;
+	
+}
+footer h4{
+	color: #ffffff;
+	font-size: 16px;
+	margin: 10px 0;
+}
+.footer-left{
+	text-align: left;
+	padding: 25px 0;
+}
+
+.footer-right{
+	text-align: right;
+	padding: 25px 0;
+}
+
+
+
+
+
+
+/* Responsive Breakpoint media query*/
+
+/* mobile device  */
+
+@media(min-width: 320px) and (max-width: 576px){
+.hero-main{
+	padding-top: 50px;
+
+}
+.hero-main h2{
+	font-size: 30px;
+
+}
+.hero-main h4{
+	font-size: 13px;
+	
+	line-height: 25px;
+}
+.hero-btn1{
+	 	
+        font-size: 15px;
+        padding: 12px 50px;
+}
+.hero-btn2{
+		font-size: 15px;
+	    padding: 10px 30px;
+	     
+}
+
+.fa.fa-angle-down{
+    margin-top: 80px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.hire-btn{
+		font-size: 12px;
+        padding: 10px 60px;
+               
+
+}
+.client-review1 h5{
+	color: #ffffff;
+	font-size: 15px;
+	padding: 40px 100px ;
+
+}
+footer h4{
+	font-size: 12px;
+	margin: 7px 0;
+
+}
+
+
+}
+
+/* small device*/
+
+@media(min-width: 576.01px) and (max-width: 768px){
+
+}
+
+/* medium device*/
+
+@media(min-width: 768.01px) and (max-width: 992px){
+
+
+}
+
+
+/* desktop-laptop*/
+
+@media(min-width: 992.01px) and (max-width: 1200px){
+
+
+}
+
+/* large device*/
+
+@media(min-width: 1200.01px){
+
+
+}
+
+
+
+ 
+
